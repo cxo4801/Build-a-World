@@ -9,7 +9,7 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 	box-sizing: border-box;
 	color: #eee;
-	background-image: url("img/bg.png");
+	background-image: url("CuseHacks/img/bg.png");
 	background-repeat: no-repeat;
   	background-attachment: fixed;
 }
@@ -89,16 +89,48 @@ body {
 	float: none;
 }	
 
+.planet_build{
+    border-top: 1px solid white;
+    margin-top: 2em;
+    display: flex;
+    /*justify-content: ;*/
+    /*align-items: ;*/
+}
+
+/*h2{*/
+    /*margin-top: .2em;*/
+/*}*/
+
 /* style the forms */
 
-.box {
-  float: left;
-  width: 20%;
-  padding: 20px;
+.planet_box {
+    display: inline-block;
+    width: 20%;
+    padding: 20px;
 }
 
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
+}
+
+/*Put img layers in the right order*/
+.base_img{
+    z-index: 1;
+}
+.texture_img{
+    z-index: 2;
+}
+
+.planet_img{
+    display: inline-block;
+
+    margin: 1em;
+    width: 100%;
+    height: auto;
+}
+
+.planet_img img{
+    position: absolute;
 }
