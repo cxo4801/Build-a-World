@@ -122,6 +122,9 @@ body {
 .texture_img{
     z-index: 2;
 }
+.add_on_img{
+    z-index: 3;
+}
 
 .planet_img{
     display: inline-block;
