@@ -3,9 +3,12 @@
 	CuseHack
 */
 
-function getTexture(){
-	var texture = document.getElementById("texture").value;
-	alert("You chose the " + texture + "texture!";
+function setTexture(texture){
+	console.log("You chose the " + texture + "texture!");
+}
+
+function setColor(color){
+	console.log("You chose the " + color + "color!");
 }
 
 
