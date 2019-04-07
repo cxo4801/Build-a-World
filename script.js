@@ -3,6 +3,9 @@
 	CuseHack
 */
 
+var World, Texture, Color, AddOn, AlienColor, Body, Eye, Mouth, Leg = "";
+
+
 function setTexture(texture){
 	var textureImg = document.getElementById("texture_img");
 	console.log(texture);
@@ -46,6 +49,39 @@ function setAddOn(addOn) {
 	if (addOn == "Ship") {
 		addOnImg.src = "CuseHacks/img/add_ship-01.png";
 	}
+=======
+	Texture = texture;
+	console.log("You chose the " + texture + "texture!");
+}
+
+function setColor(color){
+	Color = color;
+	console.log("You chose the " + color + "color!");
+}
+
+function setAddOn(addOn){
+	AddOn = addOn;
+	console.log("You chose the " + addOn + "addOn!");
+}
+
+function setAlienColor(color){
+	AlienColor = color;
+	console.log("You chose the " + color + "color!");
+}
+
+function setBody(body){
+	Body = body;
+	console.log("You chose the " + body + "body!");
+}
+
+function setEye(eye){
+	Eye = eye;
+	console.log("You chose the " + eye + "eye!");
+}
+
+function setMouth(mouth){
+	Mouth = mouth;
+	console.log("You chose the " + mouth + "mouth!");
 }
 
 function setLegs(leg){
