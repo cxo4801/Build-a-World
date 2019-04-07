@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Carolyn Opre --> 
+<!--April 6th & 7th 2019 --> 
+<!-- CuseHack project --> 
+<meta charset=utf-8 />
+<title>World Builder</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+</head> 
+<body>	
+	<div>
+		<h1 id="title">Build A World!</h1> 
+		<img src="landingImg" alt=""><img>
+		<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+		ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+		aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+		dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+		officia deserunt mollit anim id est laborum.</p>
+		<p  >Lets's Go!</p>
+	</div>
+	
+	<hr />
+	
+		<h2>Build your planet</h2>
+		
+		
+	<div class="clearfix">
+
+		
+		
+		<div class="box" >
+			<h2>Texture:</h2>
+			<label class="container" onclick="getTexture();">Smooth
+  				<input id="texture" type="radio" checked="checked" name="texture" value="smooth" >
+				<span class="checkmark"></span>
+			</label>
+			<label class="container">Water
+				<input type="radio" name="texture">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container">Craters
+				<input type="radio" name="texture">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container">Swirls
+				<input type="radio" name="texture">
+				<span class="checkmark"></span>
+			</label>		
+		</div>
+		
+		<div class="box">
+			<h2>Color:</h2>
+			<label class="container">Green
+  				<input type="radio" checked="checked" name="color">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container">Blue
+				<input type="radio" name="color">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container">Red
+				<input type="radio" name="color">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container">Yellow
+				<input type="radio" name="color">
+				<span class="checkmark"></span>
+			</label>		
+		</div>
+		
+		<div class="box">
+			<img src="img/base_blue-01.png" alt=""><img>
+		</div>
+	</div>
+	
+	<hr />
+
+	<div id="email">
+		<form action="">
+			<h2>Like your world? </h2>
+			<p>Send yourself a copy here!</p>
+			<label>Email:</label>
+			<input type="text"></input>
+			<button type="submit" onclick="getContent();">Submit</button>
+		</form>
+	</div>
+	
+</body>
+</html>
