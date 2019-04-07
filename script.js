@@ -9,12 +9,18 @@ function getTexture(){
 }
 
 
-function getContent(){
-	var texture = document.getElementById("texture").value;
-	var texture = document.getElementById("color").value;
-	var content = ;
-	
-	window.open('mailto:cxo4801@rit.edu?subject=Your Brand New World&body='+content);
+function myFunction(){
+	//var texture = document.getElementById("texture").value;
+	//var color = document.getElementById("color").value;
+	//var content = texture + color;
+
+ 	var email = document.getElementById("email").value;
+    var body = "it worked!";
+  	var url = "mailto:"+email+"?Subject=Hello%20again&body="+body;
+  	location.href = url;
+  
+  	document.getElementById("sent").innerHTML = "It has been sent!";
+
 }
 
 //----------------------------------------------------------------------------------------
