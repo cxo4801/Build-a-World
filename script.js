@@ -3,8 +3,9 @@
 	CuseHack
 */
 
-function setTexture(texture){
-	console.log("You chose the " + texture + "texture!");
+function getTexture(){
+	var texture = document.getElementById("texture").value;
+	alert("You chose the " + texture + "texture!";
 }
 
 
@@ -17,7 +18,7 @@ function myFunction(){
     var body = "it worked!";
   	var url = "mailto:"+email+"?Subject=Hello%20again&body="+body;
   	location.href = url;
-
+  
   	document.getElementById("sent").innerHTML = "It has been sent!";
 
 }

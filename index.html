@@ -11,40 +11,46 @@
 </head> 
 <body>	
 	<div>
-		<h1 id="title">Build A World!</h1>
-		<!--<img src="landingImg" alt=""><img>-->
-		<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+		<h1 id="title">Build A World!</h1> 
+		<img src="landingImg" alt=""><img>
+		<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
 		ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
 		aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
 		dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
 		officia deserunt mollit anim id est laborum.</p>
 		<p  >Lets's Go!</p>
 	</div>
+	
+	<hr />
+	
+		<h2>Build your planet</h2>
+		
+		
+	<div class="clearfix">
 
-	<h2>Build your planet</h2>
-
-	<div class="clearfix planet_build">
-		<div class="planet_box" >
+		
+		
+		<div class="box" >
 			<h2>Texture:</h2>
-			<label class="container" onclick="setTexture(this.value)">Smooth
-  				<input type="radio" checked="checked" name="texture" value="smooth" >
+			<label class="container" onclick="getTexture();">Smooth
+  				<input id="texture" type="radio" checked="checked" name="texture" value="smooth" >
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setTexture()">Water
+			<label class="container">Water
 				<input type="radio" name="texture">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setTexture();">Craters
+			<label class="container">Craters
 				<input type="radio" name="texture">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="getTexture();">Swirls
+			<label class="container">Swirls
 				<input type="radio" name="texture">
 				<span class="checkmark"></span>
 			</label>		
 		</div>
 		
-		<div class="planet_box">
+		<div class="box">
 			<h2>Color:</h2>
 			<label class="container">Green
   				<input type="radio" checked="checked" name="color">
@@ -64,9 +70,8 @@
 			</label>		
 		</div>
 		
-		<div class="planet_img">
-			<img class="base_img" src="CuseHacks/img/base_blue-01.png" alt="">
-			<img class="texture_img" src="CuseHacks/img/terr_crater-01.png" alt="">
+		<div class="box">
+			<img src="img/base_blue-01.png" alt=""><img>
 		</div>
 	</div>
 	
@@ -81,5 +86,6 @@
 		<button onclick="myFunction()">Send!</button>
 		<p id="sent"></p>
 	</div>
+	
 </body>
 </html>
