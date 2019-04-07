@@ -20,19 +20,19 @@
 	<div class="clearfix planet_build">
 		<div class="planet_box" >
 			<h2>Texture:</h2>
-			<label class="container" onclick="setTexture(this.innerHTML)">Smooth
-  				<input type="radio" checked="checked" name="texture" value="smooth" >
+			<label class="container" onclick="setTexture('Smooth')">Smooth
+  				<input type="radio" name="texture" value="smooth" >
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setTexture(this.innerHTML)">Water
+			<label class="container" onclick="setTexture('Water')">Water
 				<input type="radio" name="texture">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container"  onclick="setTexture(this.innerHTML)">Craters
+			<label class="container"  onclick="setTexture('Craters')">Craters
 				<input type="radio" name="texture">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setTexture(this.innerHTML)">Swirls
+			<label class="container" onclick="setTexture('Swirls')">Swirls
 				<input type="radio" name="texture">
 				<span class="checkmark"></span>
 			</label>		
@@ -40,19 +40,19 @@
 		
 		<div class="planet_box">
 			<h2>Color:</h2>
-			<label class="container" onclick="setColor(this.innerHTML)">Green
-  				<input type="radio" checked="checked" name="color">
+			<label class="container" onclick="setColor('Green')">Green
+  				<input type="radio" name="color">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setColor(this.innerHTML)">Blue
+			<label class="container" onclick="setColor('Blue')">Blue
 				<input type="radio" name="color">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setColor(this.innerHTML)">Red
+			<label class="container" onclick="setColor('Red')">Red
 				<input type="radio" name="color">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setColor(this.innerHTML)">Yellow
+			<label class="container" onclick="setColor('Yellow')">Yellow
 				<input type="radio" name="color">
 				<span class="checkmark"></span>
 			</label>
@@ -60,15 +60,15 @@
 			
 		<div class="planet_box">
 			<h2>Add-Ons:</h2>
-			<label class="container" onclick="setAddOn(this.innerHTML)">Ship
-  				<input type="radio" checked="checked" name="addOn">
+			<label class="container" onclick="setAddOn('Ship')">Ship
+  				<input type="radio" name="addOn">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setAddOn(this.innerHTML)">Ring
+			<label class="container" onclick="setAddOn('Ring')">Ring
 				<input type="radio" name="addOn">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setAddOn(this.innerHTML)">Moon
+			<label class="container" onclick="setAddOn('Moon')">Moon
 				<input type="radio" name="addOn">
 				<span class="checkmark"></span>
 			</label>	
@@ -84,62 +84,92 @@
 	
 	<h2>Build your Aliens</h2>
 	
-		<div class="clearfix planet_build">
+	<div class="clearfix planet_build">
 		<div class="planet_box" >
-			<h2>Texture:</h2>
-			<label class="container" onclick="setTexture(this.innerHTML)">Smooth
-  				<input type="radio" checked="checked" name="texture" value="smooth" >
+			<h2>Color:</h2>
+			<label class="container" onclick="setAlienColor('Cool')">Cool
+  				<input type="radio" name="alienColor" >
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setTexture(this.innerHTML)">Water
-				<input type="radio" name="texture">
+			<label class="container" onclick="setAlienColor('Warm')">Warm
+				<input type="radio" name="alienColor">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container"  onclick="setTexture(this.innerHTML)">Craters
-				<input type="radio" name="texture">
+			<label class="container"  onclick="setAlienColor('Mixed')">Mixed
+				<input type="radio" name="alienColor">
 				<span class="checkmark"></span>
-			</label>
-			<label class="container" onclick="setTexture(this.innerHTML)">Swirls
-				<input type="radio" name="texture">
-				<span class="checkmark"></span>
-			</label>		
+			</label>	
 		</div>
 		
 		<div class="planet_box">
-			<h2>Color:</h2>
-			<label class="container" onclick="setColor(this.innerHTML)">Green
-  				<input type="radio" checked="checked" name="color">
+			<h2>Body:</h2>
+			<label class="container" onclick="setBody('Square')">Square
+  				<input type="radio" name="body">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setColor(this.innerHTML)">Blue
-				<input type="radio" name="color">
+			<label class="container" onclick="setBody('Triangle')">Triangle
+				<input type="radio" name="body">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setColor(this.innerHTML)">Red
-				<input type="radio" name="color">
+			<label class="container" onclick="setBody('Circle')">Circles
+				<input type="radio" name="body">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setColor(this.innerHTML)">Yellow
-				<input type="radio" name="color">
+		</div>
+		
+		<div class="planet_box">
+			<h2>Eye:</h2>
+			<label class="container" onclick="setEye('One')">One
+  				<input type="radio" name="eye">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container" onclick="setEye('Two')">Two
+				<input type="radio" name="eye">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container" onclick="setEye('Six')">Six
+				<input type="radio" name="eye">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container" onclick="setEye('Stars')">Stars
+				<input type="radio" name="eye">
 				<span class="checkmark"></span>
 			</label>
 		</div>
 			
 		<div class="planet_box">
-			<h2>Add-Ons:</h2>
-			<label class="container" onclick="setAddOn(this.innerHTML)">Ship
-  				<input type="radio" checked="checked" name="addOn">
+			<h2>Mouth:</h2>
+			<label class="container" onclick="setMouth('Smile')">Smile
+  				<input type="radio" name="mouth">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setAddOn(this.innerHTML)">Ring
-				<input type="radio" name="addOn">
+			<label class="container" onclick="setMouth('Frown')">Frown
+				<input type="radio" name="mouth">
 				<span class="checkmark"></span>
 			</label>
-			<label class="container" onclick="setAddOn(this.innerHTML)">Moon
-				<input type="radio" name="addOn">
+			<label class="container" onclick="setMouth('Ooh')">Ooh
+				<input type="radio" name="mouth">
 				<span class="checkmark"></span>
 			</label>	
 		</div>
+		
+		<div class="planet_box">
+			<h2>Legs:</h2>
+			<label class="container" onclick="setLegs('Legs')">Legs
+  				<input type="radio" name="legs">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container" onclick="setLegs('Squiggly')">Squiggly
+				<input type="radio" name="legs">
+				<span class="checkmark"></span>
+			</label>
+			<label class="container" onclick="setLegs('Jet')">Jet
+				<input type="radio" name="legs">
+				<span class="checkmark"></span>
+			</label>	
+		</div>
+		
+		
 		
 		<div class="planet_img">
 			<img class="base_img" src="CuseHacks/img/base_blue-01.png" alt="">
@@ -156,7 +186,7 @@
 		<form>
 			<input type="text" id="email">
 		</form>
-		<button onclick="myFunction()">Send!</button>
+		<button onclick="send()">Send!</button>
 		<p id="sent"></p>
 	</div>
 </body>
