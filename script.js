@@ -48,16 +48,27 @@ function setAddOn(addOn) {
 	}
 }
 
-function myFunction(){
+function setLegs(leg){
+	Leg = leg;
+	console.log("You chose the " + leg + "leg!");
+}
+
+
+function send(){
 	//var texture = document.getElementById("texture").value;
 	//var color = document.getElementById("color").value;
 	//var content = texture + color;
+	var webURL =  "https://cxo4801.github.io/Build-a-World/"
 
+	World = Texture+" texture, "+Color+" color, "+AddOn+" add on, "+AlienColor+" alien color, "+Body+" body, "+Eye+" eyed, "+Mouth+" mouth and "+Leg+" legs";
+	console.log("You chose these elements:"+World);
  	var email = document.getElementById("email").value;
-    var body = "it worked!";
+ 	//var email = "cxo4801@rit.edu";
+    var body = "Hi! You created a world with these elements:  "+World+".   Our website is:  "+webURL+"   Come back again to try out new styles soon!";
+  	//var body = "It worked!";
   	var url = "mailto:"+email+"?Subject=Hello%20again&body="+body;
   	location.href = url;
-  
+
   	document.getElementById("sent").innerHTML = "It has been sent!";
 
 }
