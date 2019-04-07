@@ -8,6 +8,7 @@ var World, Texture, Color, AddOn, AlienColor, Body, Eye, Mouth, Leg = "";
 
 function setTexture(texture){
 	var textureImg = document.getElementById("texture_img");
+	Texture = texture;
 	console.log(texture);
 	if(texture == "Smooth"){
 		textureImg.src = "CuseHacks/img/blank-01.png";
@@ -22,6 +23,8 @@ function setTexture(texture){
 
 function setColor(color){
 	var baseImg = document.getElementById("base_img");
+	Color = color;
+
 	console.log(color);
 	if(color == "Green"){
 		baseImg.src = "CuseHacks/img/base_green-01.png";
@@ -39,6 +42,7 @@ function setColor(color){
 
 function setAddOn(addOn) {
 	var addOnImg = document.getElementById("add_on_img");
+	AddOn = addOn;
 	console.log(addOn);
 	if (addOn == "Moon") {
 		addOnImg.src = "CuseHacks/img/add_moon-01.png";
@@ -49,20 +53,11 @@ function setAddOn(addOn) {
 	if (addOn == "Ship") {
 		addOnImg.src = "CuseHacks/img/add_ship-01.png";
 	}
-=======
-	Texture = texture;
 	console.log("You chose the " + texture + "texture!");
 }
 
-function setColor(color){
-	Color = color;
-	console.log("You chose the " + color + "color!");
-}
 
-function setAddOn(addOn){
-	AddOn = addOn;
-	console.log("You chose the " + addOn + "addOn!");
-}
+
 
 function setAlienColor(color){
 	AlienColor = color;
